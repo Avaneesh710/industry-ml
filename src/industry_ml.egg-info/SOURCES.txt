@@ -1,9 +1,0 @@
-pyproject.toml
-src/industry_ml/__init__.py
-src/industry_ml/db.py
-src/industry_ml.egg-info/PKG-INFO
-src/industry_ml.egg-info/SOURCES.txt
-src/industry_ml.egg-info/dependency_links.txt
-src/industry_ml.egg-info/requires.txt
-src/industry_ml.egg-info/top_level.txt
-tests/test_db.py
