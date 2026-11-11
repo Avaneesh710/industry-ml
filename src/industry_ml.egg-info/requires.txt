@@ -1,0 +1,9 @@
+numpy
+pandas
+psycopg[binary]>=3.2
+python-dotenv
+
+[dev]
+pytest
+ruff
+ipykernel
