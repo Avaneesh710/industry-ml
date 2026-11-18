@@ -5,5 +5,8 @@
       "path": "C:\\Program Files\\Git\\bin\\bash.exe",
       "args": ["--init-file", "${workspaceFolder}/.venv/Scripts/activate"]
     }
-  }
+  },
+  "files.eol": "\n",
+  "pythonIndent.useTabOnHangingIndent": false,
+  "pythonIndent.trimLinesWithOnlyWhitespace": true
 }
