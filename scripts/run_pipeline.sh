@@ -33,6 +33,7 @@ run_step() {
 {
   run_step "init database" bash scripts/init_db.sh
   run_step "ingest raw data" python -m industry_ml.ingest "$@"
+  run_step "refresh features" bash scripts/refresh_features.sh
   run_step "tests" python -m pytest -q
 } 2>&1 | tee "$log_file"
 

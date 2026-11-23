@@ -14,7 +14,7 @@ from pathlib import Path
 
 import pandas as pd
 
-MISSING_CODES = ["-99.99", "-999"]  # French writes these when thers no data so pandas wil turn these into Nan
+MISSING_CODES = ["-99.99", "-999"]  # French writes these when there iss no data so pandas will turn these into Nan
 PERCENT = 0.01
 
 @dataclass  # generates __init__
