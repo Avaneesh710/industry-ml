@@ -90,8 +90,8 @@ SELECT
     -- "next row" always means "next month".
     lead(ret_excess) OVER by_month                           AS target -- lead(ret_excess) OVER by_month reads the next row's excess return within the same industry: 
 FROM features.industry_returns --                                         next month's, because rows are one per month. That's the target. 
-    by_month AS (PARTITION BY industry ORDER BY month), --      It deliberately uses the future, because it's the answer the model will be trained to predict, and it's never used as an input.
 WINDOW 
+    by_month AS (PARTITION BY industry ORDER BY month), --      It deliberately uses the future, because it's the answer the model will be trained to predict, and it's never used as an input.
     mom_12_1  AS (by_month ROWS BETWEEN 11 PRECEDING AND 1 PRECEDING),
     mom_36_13 AS (by_month ROWS BETWEEN 35 PRECEDING AND 12 PRECEDING),
     last_12   AS (by_month ROWS BETWEEN 11 PRECEDING AND CURRENT ROW),
